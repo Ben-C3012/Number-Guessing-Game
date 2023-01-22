@@ -13,7 +13,6 @@ let min = 1,
     winningGuess = getRandomNum(min, max)
     guessesLeft = 4
 
-
 // Spans equal to min and max 
 minNum.textContent = min
 maxNum.textContent = max
@@ -24,12 +23,7 @@ game.addEventListener('mousedown', (e)=>{
       window.location.reload()
   }
 
-
-
-
 })
-
-
 
 // Listen for guess
 guessBtn.addEventListener('click', ()=>{
@@ -67,14 +61,11 @@ guessBtn.addEventListener('click', ()=>{
 
 })
 
-
-
 // set message Function 
 function setMessage(msg, color) {
     message.style.color = color
     message.textContent = msg
 }
-
 
 function gameOver(won,msg) {
     let color 
